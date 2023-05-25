@@ -1,0 +1,62 @@
+// header
+#header {
+  display:         flex;
+  justify-content: space-between;
+  align-items:     baseline;
+
+  padding:   10px 32px;
+  max-width: 960px;
+  margin:    0 auto;
+
+  // header elements
+  * {
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  // header links
+  .header-link {
+    color:     @fg2;
+    font-size: 16px;
+
+    &:hover, &:focus {
+      text-decoration: underline;
+    }
+
+    // left margin when not first
+    &:not(:first-of-type) {
+      margin-left: 16px;
+    }
+  }
+
+  // header wrapper
+  &-wrapper {
+    border-bottom: 1px solid #000;
+  }
+
+  // header title
+  &-title {
+    color: @fg;
+    font-size:   20px;
+    margin-left: 6px;
+
+    &:hover, &:focus {
+      text-decoration: none;
+    }
+  }
+
+  // header logo
+  &-logo {
+    width:  20px;
+    height: 20px;
+    float:  left;
+  }
+
+  // activate when window is small
+  @media (max-width: 500px) {
+    // hide right of header
+    &-right {
+      display: none;
+    }
+  }
+}

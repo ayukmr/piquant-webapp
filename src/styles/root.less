@@ -1,0 +1,60 @@
+// all elements
+html {
+  font-family: Helvetica;
+}
+
+// body
+body {
+  margin: 0;
+}
+
+// links
+a {
+  color: @link;
+  text-decoration: none;
+
+  // focused links
+  &:hover, &:focus {
+    color: @link2;
+  }
+}
+
+// horizontal rules
+hr {
+  margin:     10px 0;
+  border:     none;
+  border-top: 1.5px solid @fg3;
+}
+
+// buttons
+button {
+  background: @bg;
+  border: 1px solid @fg4;
+  margin: 0;
+
+  font-size:   14px;
+  font-family: Helvetica;
+
+  // hovered buttons
+  &:hover {
+    background: @fg4;
+  }
+
+  // active buttons
+  &:active {
+    border:     1px solid @fg3;
+    background: @fg3;
+  }
+}
+
+// root content
+#content {
+  margin: 20px 100px;
+}
+
+// title
+.title {
+  color:     @fg;
+  font-size: 20px;
+  margin-bottom: 16px;
+}

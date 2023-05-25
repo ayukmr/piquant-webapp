@@ -1,0 +1,39 @@
+// form
+.form {
+  // form title
+  &-title {
+    .title()
+  }
+
+  // form input
+  &-input {
+    // set bottom margin
+    margin-bottom: 16px;
+
+    // input label
+    label {
+      display:       block;
+      color:         @fg2;
+      margin-bottom: 3px;
+    }
+
+    // input itself
+    input {
+      margin:     0;
+      font-size:  14px;
+      background: @bg;
+      border:     1px solid @fg4;
+    }
+  }
+
+  // submit button
+  &-submit {
+    margin-bottom: 5px;
+  }
+
+  // extra info
+  &-extra {
+    font-size: 14px;
+    display:   block;
+  }
+}

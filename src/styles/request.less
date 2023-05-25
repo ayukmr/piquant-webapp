@@ -1,0 +1,28 @@
+// requests
+.request {
+  // set bottom margin if not last
+  &:not(:last-of-type) {
+    margin-bottom: 30px;
+  }
+
+  // request type
+  &-type {
+    margin-right: 5px;
+  }
+
+  // request path
+  &-path {
+    font-size: 15px;
+  }
+
+  // request description
+  &-description {
+    color: @fg2;
+    margin-bottom: 10px;
+  }
+
+  // request response
+  &-response {
+    margin: 0;
+  }
+}

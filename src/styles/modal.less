@@ -1,0 +1,35 @@
+// modal wrapper
+.modal-wrapper {
+  position:   absolute;
+  background: #0002;
+
+  top:  0;
+  left: 0;
+
+  height: 100%;
+  width:  100%;
+
+  // modal itself
+  .modal {
+    position:   absolute;
+    background: @bg;
+
+    top:  12.5%;
+    left: 12.5%;
+
+    height: 75%;
+    width:  75%;
+
+    // modal content
+    &-content {
+      padding: 20px;
+
+      // close button
+      .modal-close {
+        float:     right;
+        cursor:    pointer;
+        font-size: 20px;
+      }
+    }
+  }
+}
